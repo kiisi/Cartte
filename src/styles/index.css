@@ -4,7 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*,
+*::before,
+*::after {
+  outline-color: #4A0080;
+}
+
 /* GalanoGrotesque FONT */
+
 
 @font-face {
   font-family: "GalanoGrotesque";

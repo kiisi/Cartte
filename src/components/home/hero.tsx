@@ -5,9 +5,9 @@ export default function Hero() {
     return (
         <div className="bg-[url('/images/home/students-working-together-project.png')] pt-[175px] lg:pt-[229px] pb-[208px] px-[20px]">
             <div className="w-full max-w-[751px] mx-auto flex flex-col items-center text-center">
-                <h1 className="text-white text-[45px] lg:text-[55px] leading-[55px] lg:leading-[65px] font-semibold mb-2">The best way to sell
+                <h1 className="text-white text-[36px] lg:text-[55px] lg:leading-[55px] lg:leading-[65px] font-semibold mb-2">The best way to sell
                     your digital products online</h1>
-                <p className="text-white text-[21px] leading-[28px] font-light mb-[40px]">You know all those great ideas you have? We want you to try them, lots of them, and find out what works.</p>
+                <p className="text-white lg:text-[21px] lg:leading-[28px] font-light mb-[40px]">You know all those great ideas you have? We want you to try them, lots of them, and find out what works.</p>
                 <div className="w-full max-w-[658px] mx-auto">
                     <div className="w-full h-[65px] bg-white px-[27px] flex gap-[17px] items-center">
                         <SearchIcon />

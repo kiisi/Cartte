@@ -4,7 +4,7 @@ import Box from "./box";
 export default function Footer() {
 
     return (
-        <footer className="bg-[#f8fafc]">
+        <footer className="bg-[#f8fafc] mt-auto pt-[42px]">
             <Box>
                 <div className="grid lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-5 pb-[100px]">
                     <div>
