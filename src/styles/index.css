@@ -1,7 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/* GalanoGrotesque FONT */
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueBoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueSemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueSemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueMediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueLightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url("/fonts/galano-grotesque/GalanoGrotesqueExtraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@layer base {
+  html {
+    font-family: "GalanoGrotesque", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
 }
