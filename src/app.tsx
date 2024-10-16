@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "
 import Home from "./pages";
 import Register from "./pages/register";
 import Login from "./pages/login";
+import ForgotPassword from "./pages/forgot-password";
 
 
 const Root = () => {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
+      },
+      {
+        path: '/forgot-password',
+        element: <ForgotPassword />,
       }
     ],
   },
