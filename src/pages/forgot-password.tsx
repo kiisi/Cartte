@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import AuthLayout from "../layout/auth-layout";
 
 export default function ForgotPassword() {
+    
+    const navigate = useNavigate()
 
     return (
         <AuthLayout>
@@ -14,7 +17,7 @@ export default function ForgotPassword() {
                     <input type="email" id="email" className="px-4 w-full block border-[1px] border-[#CBD5E1] bg-[#F8FAFC] h-[55px] lg:h-[65px]" />
                 </fieldset>
                 <div className="flex flex-col lg:flex-row gap-[10px] lg:gap-[27px]">
-                    <button className="px-[64px] text-[17px] bg-primary text-white text-[18px] font-medium font-poppins h-[60px]">
+                    <button onClick={() => navigate('/confirm-email?email=email@gmail.com')} className="px-[64px] text-[17px] bg-primary text-white text-[18px] font-medium font-poppins h-[60px]">
                         Send
                     </button>
                     <button className="flex-1 py-[17px] bg-[#EDEDED] h-[60px] text-primary font-semibold">

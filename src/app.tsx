@@ -3,6 +3,7 @@ import Home from "./pages";
 import Register from "./pages/register";
 import Login from "./pages/login";
 import ForgotPassword from "./pages/forgot-password";
+import ConfirmEmail from "./pages/confirm-email";
 
 
 const Root = () => {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/forgot-password',
         element: <ForgotPassword />,
+      },
+      {
+        path: '/confirm-email',
+        element: <ConfirmEmail />
       }
     ],
   },
