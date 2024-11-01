@@ -4,6 +4,8 @@ import Register from "./pages/register";
 import Login from "./pages/login";
 import ForgotPassword from "./pages/forgot-password";
 import ConfirmEmail from "./pages/confirm-email";
+import DashboardLayout from "./layout/dashboard-layout";
+import Dashboard from "./pages/dashboard";
 
 
 const Root = () => {
@@ -41,7 +43,21 @@ const router = createBrowserRouter([
       {
         path: '/confirm-email',
         element: <ConfirmEmail />
-      }
+      },
+      {
+        path: '/dashboard',
+        element: (
+          <DashboardLayout>
+            <Outlet />
+          </DashboardLayout>
+        ),
+        children: [
+          {
+            index: true,
+            element: <Dashboard />
+          }
+        ]
+      },
     ],
   },
 ]);
