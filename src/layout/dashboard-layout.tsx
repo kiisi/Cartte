@@ -76,7 +76,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                     </div>
                 </div>
             </nav>
-            <div className="h-full overflow-y-auto px-[20px] md:px-[30px] lg:px-[50px]">
+            <div className="h-full flex-1 overflow-y-auto px-[20px] md:px-[30px] lg:px-[50px]">
                 {children}
             </div>
         </div>

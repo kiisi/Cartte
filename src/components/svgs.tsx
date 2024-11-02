@@ -1,3 +1,5 @@
+import { cn } from "../utils/cn"
+
 export const SearchIcon = () => {
 
     return (
@@ -246,6 +248,40 @@ export const LogoutIcon = () => {
             <path d="M7.125 16.625H3.95833C3.53841 16.625 3.13568 16.4582 2.83875 16.1613C2.54181 15.8643 2.375 15.4616 2.375 15.0417V3.95833C2.375 3.53841 2.54181 3.13568 2.83875 2.83875C3.13568 2.54181 3.53841 2.375 3.95833 2.375H7.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M12.6666 13.4582L16.625 9.49984L12.6666 5.5415" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M16.625 9.5H7.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+export const InfoIcon = () => {
+
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <g clip-path="url(#clip0_94_3694)">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 12V9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 6H9.00792" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <clipPath id="clip0_94_3694">
+                    <rect width="18" height="18" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    )
+}
+
+export const ArrowUpAltIcon = ({ className }: { className?: string }) => {
+
+    return (
+        <svg className={cn("stroke-[#22C55E]", className)} xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+            <g clip-path="url(#clip0_94_3700)">
+                <path d="M3.21069 4.6002L6.36069 1.4502M6.36069 1.4502L9.51069 4.6002M6.36069 1.4502V9.5502" stroke="" stroke-width="1.296" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <clipPath id="clip0_94_3700">
+                    <rect width="10.8" height="10.8" fill="white" transform="translate(0.960693 0.100098)" />
+                </clipPath>
+            </defs>
         </svg>
     )
 }

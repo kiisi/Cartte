@@ -6,6 +6,7 @@ import ForgotPassword from "./pages/forgot-password";
 import ConfirmEmail from "./pages/confirm-email";
 import DashboardLayout from "./layout/dashboard-layout";
 import Dashboard from "./pages/dashboard";
+import Explore from "./pages/explore";
 
 
 const Root = () => {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <Dashboard />
+          },
+          {
+            path: 'explore',
+            element: <Explore />
           }
         ]
       },
