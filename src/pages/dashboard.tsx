@@ -1,4 +1,5 @@
-import { ArrowUpAltIcon, InfoIcon } from "../components/svgs";
+import { ArrowUpAltIcon, CheckedIcon, InfoIcon, UnCheckedIcon } from "../components/svgs";
+import { cn } from "../utils/cn";
 
 const dashboardData = [
     {
@@ -27,6 +28,33 @@ const dashboardData = [
     },
 ]
 
+const getStartedData = [
+    {
+        title: 'Setup your username',
+        isCompleted: true,
+    },
+    {
+        title: 'Create your first product',
+        isCompleted: true,
+    },
+    {
+        title: 'Get your first follower',
+        isCompleted: false,
+    },
+    {
+        title: 'Make your first sale',
+        isCompleted: false,
+    },
+    {
+        title: 'Make your first payout',
+        isCompleted: false,
+    },
+    {
+        title: 'Send your first payout',
+        isCompleted: false,
+    },
+]
+
 export default function Dashboard() {
 
     return (
@@ -39,7 +67,7 @@ export default function Dashboard() {
                 <p className="mb-[25px] lg:text-[24px] text-[#181818] font-medium">We're here to help you get paid for your work.</p>
                 <button className="bg-[#FBC506] py-[15px] px-[20px]">Create your first product</button>
             </div>
-            <div className="grid grid-cols-4 gap-[18px]">
+            <div className="grid grid-cols-4 gap-[18px] mb-[50px]">
                 {
                     dashboardData.map((data, index) => (
                         <div key={index} className="bg-[#FFFAE9] px-[34px] py-[19px]">
@@ -68,6 +96,27 @@ export default function Dashboard() {
                         </div>
                     ))
                 }
+            </div>
+            <div>
+                <h1 className="text-[#181818] font-medium mb-[34px] text-[29px]">Getting Started</h1>
+                <div className="grid grid-cols-2 gap-y-[18px] gap-x-[21px]">
+                    {
+                        getStartedData.map((data, index) => (
+                            <div key={index} className="h-[62px] bg-[#FFFAE9] flex gap-[11px] items-center px-[14px] py-[19px]">
+                                <div className="shrink-0">
+                                    {
+                                        data.isCompleted ? (
+                                            <CheckedIcon />
+                                        ) : (
+                                            <UnCheckedIcon />
+                                        )
+                                    }
+                                </div>
+                                <p className={cn(data.isCompleted ? "text-[#A3A3A3]" : "text-[#625757]")}>{data.title}</p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
