@@ -67,7 +67,7 @@ export default function Dashboard() {
                 <p className="mb-[25px] lg:text-[24px] text-[#181818] font-medium">We're here to help you get paid for your work.</p>
                 <button className="bg-[#FBC506] py-[15px] px-[20px]">Create your first product</button>
             </div>
-            <div className="grid grid-cols-4 gap-[18px] mb-[50px]">
+            <div className="grid md:grid-cols-2 2xl:grid-cols-4 gap-[18px] mb-[50px]">
                 {
                     dashboardData.map((data, index) => (
                         <div key={index} className="bg-[#FFFAE9] px-[34px] py-[19px]">
