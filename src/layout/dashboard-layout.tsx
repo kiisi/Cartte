@@ -27,20 +27,20 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                                 </Link>
                             </header>
                             <div className="flex flex-col gap-[40px]">
-                                <div className="flex items-center gap-[14px]">
+                                <Link to='/dashboard' className="flex items-center gap-[14px]">
                                     <AppIcon />
                                     <div className="text-white text-[18px] font-medium">Home</div>
-                                </div>
+                                </Link>
                                 <div>
                                     <h3 className="text-[#A1A1AA] text-[14px] uppercase mb-[30px]">Personal</h3>
-                                    <div className="flex items-center gap-[14px] mb-[30px]">
+                                    <Link to='/dashboard/explore' className="flex items-center gap-[14px] mb-[30px]">
                                         <SearchAltIcon />
                                         <div className="text-white text-[18px] font-medium">Explore</div>
-                                    </div>
-                                    <div className="flex items-center gap-[14px]">
+                                    </Link>
+                                    <Link to='/dashboard/library' className="flex items-center gap-[14px]">
                                         <LibraryIcon />
                                         <div className="text-white text-[18px] font-medium">Library</div>
-                                    </div>
+                                    </Link>
                                 </div>
                                 <div>
                                     <h3 className="text-[#A1A1AA] text-[14px] uppercase mb-[30px]">Shop</h3>

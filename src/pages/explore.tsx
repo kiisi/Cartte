@@ -16,10 +16,10 @@ export default function Explore() {
                         </Link>
                         <div className="h-[54px] bg-[#FFFCF0] flex-1 px-[17px] py-[13px] flex items-center gap-[11px]">
                             <SearchIcon />
-                            <input className="flex-1 bg-transparent placeholder-[#7E7D7D]" placeholder="Enter store name or item" />
+                            <input className="flex-1 bg-transparent placeholder-[#7E7D7D] outline-none" placeholder="Enter store name or item" />
                         </div>
                         <div className="hidden lg:flex gap-[21px]">
-                            <Link to='/register' className="px-[20px] py-[15px] text-[18px] border-[1px] bg-primary text-white text-[18px] font-semibold">
+                            <Link to='/dashboard' className="px-[20px] py-[15px] text-[18px] border-[1px] bg-primary text-white text-[18px] font-semibold">
                                 Dashboard
                             </Link>
                         </div>

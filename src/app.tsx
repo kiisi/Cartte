@@ -7,6 +7,7 @@ import ConfirmEmail from "./pages/confirm-email";
 import DashboardLayout from "./layout/dashboard-layout";
 import Dashboard from "./pages/dashboard";
 import Explore from "./pages/explore";
+import Library from "./pages/library";
 
 
 const Root = () => {
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
           {
             path: 'explore',
             element: <Explore />
-          }
+          },
+          {
+            path: 'library',
+            element: <Library />
+          },
         ]
       },
     ],
